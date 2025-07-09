@@ -22,10 +22,11 @@ characters_by_role_full = {
 
 # Limited Stadium roster
 stadium_characters = [
-    'D.Va', 'Junker Queen', 'Orisa', 'Reinhardt', 'Zarya',
-    'Ashe', 'Cassidy', 'Freja', 'Genji', 'Mei', 'Reaper', 'Soldier: 76',
-    'Ana', 'Juno', 'Kiriko', 'Lúcio', 'Mercy', 'Moira'
+    'D.Va', 'Junker Queen', 'Orisa', 'Reinhardt', 'Zarya', 'Sigma',
+    'Ashe', 'Cassidy', 'Freja', 'Genji', 'Mei', 'Reaper', 'Soldier: 76', 'Junkrat',
+    'Ana', 'Juno', 'Kiriko', 'Lúcio', 'Mercy', 'Moira', 'Zenyatta'
 ]
+
 
 # Modes to count mapping
 mode_to_count = {
