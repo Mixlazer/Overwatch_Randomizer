@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 import random
-from PIL import Image, ImageTk
 import os
+import sys
 
 # English roles
 roles = ['Tank', 'Damage', 'Support']
@@ -10,21 +10,29 @@ roles = ['Tank', 'Damage', 'Support']
 # Full roster by role
 characters_by_role_full = {
     'Tank': [
-        'D.Va', 'Junker Queen', 'Orisa', 'Reinhardt', 'Zarya', 'Winston', 'Sigma', 'Ramattra', 'Roadhog', 'Mauga', 'Wrecking Ball'
+        'D.Va', 'Domina', 'Doomfist', 'Hazard', 'Junker Queen', 'Mauga', 'Orisa',
+        'Ramattra', 'Reinhardt', 'Roadhog', 'Sigma', 'Winston', 'Wrecking Ball', 'Zarya'
     ],
     'Damage': [
-        'Ashe', 'Cassidy', 'Freja', 'Genji', 'Mei', 'Reaper', 'Soldier: 76', 'Echo', 'Pharah', 'Sojourn', 'Sombra', 'Symmetra', 'Torbjörn', 'Tracer', 'Hanzo', 'Bastion', 'Junkrat'
+        'Anran', 'Ashe', 'Bastion', 'Cassidy', 'Echo', 'Emre', 'Freja', 'Genji',
+        'Hanzo', 'Junkrat', 'Mei', 'Pharah', 'Reaper', 'Shion', 'Sierra',
+        'Sojourn', 'Soldier: 76', 'Sombra', 'Symmetra', 'Torbjörn', 'Tracer',
+        'Vendetta', 'Venture', 'Widowmaker'
     ],
     'Support': [
-        'Ana', 'Juno', 'Kiriko', 'Lúcio', 'Mercy', 'Moira', 'Zenyatta', 'Baptiste', 'Brigitte', 'Illari', 'Lifeweaver'
+        'Ana', 'Baptiste', 'Brigitte', 'Illari', 'Jetpack Cat', 'Juno', 'Kiriko',
+        'Lifeweaver', 'Lúcio', 'Mercy', 'Mizuki', 'Moira', 'Wuyang', 'Zenyatta'
     ]
 }
 
 # Limited Stadium roster
 stadium_characters = [
-    'D.Va', 'Junker Queen', 'Orisa', 'Reinhardt', 'Zarya', 'Sigma',
-    'Ashe', 'Cassidy', 'Freja', 'Genji', 'Mei', 'Reaper', 'Soldier: 76', 'Junkrat',
-    'Ana', 'Juno', 'Kiriko', 'Lúcio', 'Mercy', 'Moira', 'Zenyatta'
+    'D.Va', 'Doomfist', 'Hazard', 'Junker Queen', 'Orisa', 'Ramattra',
+    'Reinhardt', 'Sigma', 'Winston', 'Zarya',
+    'Ashe', 'Cassidy', 'Freja', 'Genji', 'Junkrat', 'Mei', 'Pharah', 'Reaper',
+    'Sojourn', 'Soldier: 76', 'Torbjörn', 'Tracer', 'Vendetta',
+    'Ana', 'Brigitte', 'Jetpack Cat', 'Juno', 'Kiriko', 'Lúcio', 'Mercy',
+    'Moira', 'Wuyang', 'Zenyatta'
 ]
 
 
@@ -42,6 +50,37 @@ role_constraints = {
     'Open': {'Tank': 2, 'Damage': 6, 'Support': 6}
 }
 
+BASE_DIR = os.path.dirname(__file__)
+
+
+def icon_path(character):
+    name = character.replace(': ', '').replace(':', '').replace(' ', '_')
+    path = os.path.join(BASE_DIR, 'assets', f"Icon-{name}.png")
+    if os.path.exists(path):
+        return path
+    return None
+
+
+def self_check():
+    all_characters = {ch for roster in characters_by_role_full.values() for ch in roster}
+    assert set(stadium_characters) <= all_characters
+    assert all(icon_path(ch) for ch in all_characters)
+    print(f"OK: {len(all_characters)} heroes, {len(stadium_characters)} stadium heroes")
+
+
+def lower_process_priority():
+    if os.name != 'nt':
+        return
+    try:
+        import ctypes
+
+        ctypes.windll.kernel32.SetPriorityClass(
+            ctypes.windll.kernel32.GetCurrentProcess(),
+            0x00004000,  # BELOW_NORMAL_PRIORITY_CLASS
+        )
+    except Exception:
+        pass
+
 class OverwatchRandomizerApp:
     def __init__(self, root):
         self.root = root
@@ -55,6 +94,7 @@ class OverwatchRandomizerApp:
         self.character_labels = []
         self.avatar_labels = []
         self.avatar_images = []
+        self.photo_cache = {}
 
         self.create_widgets()
         self.refresh()
@@ -170,14 +210,15 @@ class OverwatchRandomizerApp:
             selected_characters.add(character)
             self.character_labels[i].config(text=character)
 
-            img_file = f"Icon-{character.replace(': ', '').replace(':', '').replace(' ', '_')}.webp"
-            BASE_DIR = os.path.dirname(__file__)
-            img_path = os.path.join(BASE_DIR, 'assets', img_file)
-            if os.path.exists(img_path):
+            img_path = icon_path(character)
+            if img_path:
                 try:
-                    img = Image.open(img_path).convert("RGBA")
-                    img = img.resize((50, 50), Image.LANCZOS)
-                    photo = ImageTk.PhotoImage(img)
+                    photo = self.photo_cache.get(character)
+                    if photo is None:
+                        img = tk.PhotoImage(file=img_path)
+                        scale = max(1, min(img.width(), img.height()) // 50)
+                        photo = img.subsample(scale, scale)
+                        self.photo_cache[character] = photo
                     self.avatar_labels[i].configure(image=photo)
                     self.avatar_labels[i].image = photo
                     self.avatar_images[i] = photo
@@ -190,6 +231,11 @@ class OverwatchRandomizerApp:
                 self.avatar_images[i] = None
 
 if __name__ == '__main__':
+    if '--check' in sys.argv:
+        self_check()
+        raise SystemExit
+
+    lower_process_priority()
     root = tk.Tk()
     app = OverwatchRandomizerApp(root)
     root.mainloop()
