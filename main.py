@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import random
 import os
+import struct
 import sys
 
 # English roles
@@ -61,10 +62,19 @@ def icon_path(character):
     return None
 
 
+def png_size(path):
+    with open(path, 'rb') as file:
+        assert file.read(8) == b'\x89PNG\r\n\x1a\n'
+        assert file.read(4) == b'\x00\x00\x00\r'
+        assert file.read(4) == b'IHDR'
+        return struct.unpack('>II', file.read(8))
+
+
 def self_check():
     all_characters = {ch for roster in characters_by_role_full.values() for ch in roster}
     assert set(stadium_characters) <= all_characters
     assert all(icon_path(ch) for ch in all_characters)
+    assert all(png_size(icon_path(ch)) == (50, 50) for ch in all_characters)
     print(f"OK: {len(all_characters)} heroes, {len(stadium_characters)} stadium heroes")
 
 
@@ -168,15 +178,15 @@ class OverwatchRandomizerApp:
 
         # Create new labels
         for i in range(count):
-            lbl_role = ttk.Label(self.role_frame, text="Role")
+            lbl_role = ttk.Label(self.role_frame, text="Role", width=8)
             lbl_role.grid(row=i, column=0, padx=5, pady=5)
             self.roles_labels.append(lbl_role)
 
-            lbl_char = ttk.Label(self.role_frame, text="Character")
+            lbl_char = ttk.Label(self.role_frame, text="Character", width=16)
             lbl_char.grid(row=i, column=1, padx=5, pady=5)
             self.character_labels.append(lbl_char)
 
-            lbl_img = tk.Label(self.role_frame)
+            lbl_img = tk.Label(self.role_frame, width=50, height=50)
             lbl_img.grid(row=i, column=2, padx=5, pady=5)
             self.avatar_labels.append(lbl_img)
             self.avatar_images.append(None)
@@ -215,9 +225,7 @@ class OverwatchRandomizerApp:
                 try:
                     photo = self.photo_cache.get(character)
                     if photo is None:
-                        img = tk.PhotoImage(file=img_path)
-                        scale = max(1, min(img.width(), img.height()) // 50)
-                        photo = img.subsample(scale, scale)
+                        photo = tk.PhotoImage(file=img_path)
                         self.photo_cache[character] = photo
                     self.avatar_labels[i].configure(image=photo)
                     self.avatar_labels[i].image = photo
