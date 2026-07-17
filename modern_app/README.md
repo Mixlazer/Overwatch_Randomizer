@@ -1,5 +1,72 @@
 # Overwatch Randomizer Modern
 
+[English](#english) · [Русский](#русский)
+
+<a id="english"></a>
+
+## English
+
+The primary cross-platform edition built with .NET MAUI 10. The classic Python/Tkinter edition remains available in the repository root.
+
+### Features
+
+- shared C# application code for Windows x64 and Android ARM64;
+- randomizer modes for standard play, Stadium, Open Queue, and custom teams of 1–10;
+- Game mode for 1–10 participants, each with a personal five-hero `1-2-2` pool;
+- active hero selection by portrait;
+- point purchases, rerolls, `2:1` transfers, round statistics, and screenshot import;
+- one personal free reroll per player each round;
+- local screenshot recognition through `llama.cpp` with JSON Schema structured output;
+- deterministic top-five counterpick teams without repeated heroes, using `data/counterpickgg` for 5v5, Open 6v6, and Stadium;
+- Russian and English interfaces plus a dedicated local AI chat tab;
+- `Auto / GPU / CPU` acceleration: Windows uses Vulkan with automatic CPU fallback, while Android currently uses the CPU runtime.
+
+### Local AI
+
+On first launch, the application offers the standard
+[Qwen3.5-0.8B Q4_K_M](https://huggingface.co/unsloth/Qwen3.5-0.8B-GGUF) option (~740 MB),
+the advanced [Qwen3.5-2B Q4_K_M](https://huggingface.co/unsloth/Qwen3.5-2B-GGUF) option (~1.95 GB),
+or a fully manual mode. The advanced model is intended for high-end hardware. Downloads are verified by SHA-256 before the bundled `llama.cpp` runtime starts.
+
+Windows x64 and Android ARM64 runtimes are included in their respective distributions. The interface has no endpoint or external model-name fields. Manual mode performs no download; AI can be enabled later from the chat tab.
+
+### Build
+
+Building requires .NET 10 with the `maui-windows` and `maui-android` workloads, Android SDK API 36, and JDK 21. The build script uses the user-local SDK paths configured for this project.
+
+```powershell
+.\modern_app\build.ps1
+```
+
+Build only one platform:
+
+```powershell
+.\modern_app\build.ps1 -SkipAndroid
+.\modern_app\build.ps1 -SkipWindows
+```
+
+The script runs the rules check first and then creates:
+
+- `releases/windows/OverwatchRandomizer.Modern.exe` with its required libraries;
+- `releases/android/OverwatchRandomizer-arm64-v8a.apk`.
+
+On the first Android build, a local signing key and password are created in `signing/`. Signing files and generated releases are excluded from Git.
+
+### Checks
+
+```powershell
+$env:DOTNET_ROOT = "$env:USERPROFILE\.dotnet-maui"
+& "$env:DOTNET_ROOT\dotnet.exe" run --project .\modern_app\Checks\Checks.csproj -c Release
+```
+
+Checks cover the `1-2-2` composition, hero uniqueness, Stadium pool, purchases, point transfers, round scoring, personal rerolls, statistics parsing, and deterministic top-five counterpick teams without repeated heroes.
+
+---
+
+<a id="русский"></a>
+
+## Русский
+
 Основная кроссплатформенная версия на .NET MAUI 10. Классическая Python/Tkinter-версия сохранена в корне репозитория.
 
 ## Возможности
