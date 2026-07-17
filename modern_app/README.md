@@ -50,6 +50,8 @@ The script runs the rules check first and then creates:
 - `releases/windows/OverwatchRandomizer.Modern.exe` with its required libraries;
 - `releases/android/OverwatchRandomizer-arm64-v8a.apk`.
 
+After the Windows build, `installer.iss` creates the installer and `portable.iss` creates a single portable EXE that automatically uses a temporary runtime directory.
+
 On the first Android build, a local signing key and password are created in `signing/`. Signing files and generated releases are excluded from Git.
 
 ### Checks
@@ -110,6 +112,8 @@ Windows x64 и Android ARM64 runtime уже находятся в соответ
 
 - `releases/windows/OverwatchRandomizer.Modern.exe` и необходимые библиотеки;
 - `releases/android/OverwatchRandomizer-arm64-v8a.apk`.
+
+После Windows-сборки `installer.iss` создаёт установщик, а `portable.iss` — один portable EXE с автоматическим запуском из временного каталога.
 
 При первой Android-сборке локальный ключ и пароль создаются в `signing/`. Этот каталог и готовые релизы исключены из Git.
 

@@ -13,7 +13,7 @@ A cross-platform companion for Overwatch custom games featuring role and hero ra
 ### Downloads
 
 - [Windows Setup](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizerSetup.exe)
-- [Windows x64 portable](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizer-Windows-x64-2.7.zip)
+- [Windows x64 portable EXE](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizer-Portable-x64.exe)
 - [Android ARM64 APK](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizer-arm64-v8a.apk)
 
 The current version is **2.7**. Installers, portable packages, checksums, and release notes are available in [GitHub Releases](https://github.com/Mixlazer/Overwatch_Randomizer/releases).
@@ -117,7 +117,7 @@ Inference runs through the bundled `llama.cpp` runtime. Screenshots, chat messag
 - approximately 300 MB for the application plus storage for the selected model;
 - a compatible Vulkan driver for GPU inference.
 
-The installer does not require administrator privileges. The portable archive must be extracted completely because the executable depends on the adjacent runtime libraries.
+The installer does not require administrator privileges and creates an optional shortcut only for the current user. The portable edition is one EXE: it temporarily extracts the required files, runs the application, and removes the temporary session after the application closes.
 
 #### Android
 
@@ -142,6 +142,13 @@ Build only one platform:
 .\modern_app\build.ps1 -SkipWindows
 ```
 
+Create the Windows installer and the single-file portable launcher after the Windows build:
+
+```powershell
+& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" .\installer.iss
+& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" .\portable.iss
+```
+
 Run the rules check without building the interface:
 
 ```powershell
@@ -158,6 +165,7 @@ modern_app/             .NET MAUI application for Windows and Android
 data/counterpickgg/     rank-specific counterpick strength data
 docs/screenshots/       screenshots of the current interface
 installer.iss           Windows Setup definition
+portable.iss            single-file portable launcher definition
 OverwatchRandomizerSetup.exe
                         installer for the current version
 main.py                 preserved classic Tkinter version
@@ -191,7 +199,7 @@ Overwatch and related names are trademarks of Blizzard Entertainment.
 ## Скачать
 
 - [Windows Setup](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizerSetup.exe)
-- [Windows x64 — portable](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizer-Windows-x64-2.7.zip)
+- [Windows x64 — portable EXE](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizer-Portable-x64.exe)
 - [Android ARM64 APK](https://github.com/Mixlazer/Overwatch_Randomizer/releases/latest/download/OverwatchRandomizer-arm64-v8a.apk)
 
 Актуальная версия — **2.7**. Готовые файлы и список изменений находятся в [GitHub Releases](https://github.com/Mixlazer/Overwatch_Randomizer/releases).
@@ -295,7 +303,7 @@ Overwatch and related names are trademarks of Blizzard Entertainment.
 - примерно 300 МБ для приложения плюс место под выбранную модель;
 - для GPU-инференса — совместимый Vulkan-драйвер.
 
-Установщик не требует прав администратора. Portable-архив нужно распаковать полностью: одиночный EXE без соседних библиотек не запускается.
+Установщик не требует прав администратора и создаёт необязательный ярлык только для текущего пользователя. Portable-версия состоит из одного EXE: она временно извлекает необходимые файлы, запускает приложение и удаляет временную сессию после его закрытия.
 
 ### Android
 
@@ -320,6 +328,13 @@ Overwatch and related names are trademarks of Blizzard Entertainment.
 .\modern_app\build.ps1 -SkipWindows
 ```
 
+После Windows-сборки установщик и однофайловый portable launcher создаются так:
+
+```powershell
+& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" .\installer.iss
+& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" .\portable.iss
+```
+
 Проверки правил без сборки интерфейса:
 
 ```powershell
@@ -336,6 +351,7 @@ modern_app/             приложение .NET MAUI для Windows и Android
 data/counterpickgg/     таблицы силы контрпиков по рангам
 docs/screenshots/       изображения актуального интерфейса
 installer.iss           сценарий Windows Setup
+portable.iss            сценарий однофайлового portable launcher
 OverwatchRandomizerSetup.exe
                         готовый установщик текущей версии
 main.py                 сохранённая классическая Tkinter-версия

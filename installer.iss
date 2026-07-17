@@ -19,7 +19,7 @@ Source: "modern_app\releases\windows\*"; DestDir: "{app}"; Flags: ignoreversion 
 
 [Icons]
 Name: "{group}\Overwatch Randomizer"; Filename: "{app}\OverwatchRandomizer.Modern.exe"; WorkingDir: "{app}"
-Name: "{commondesktop}\Overwatch Randomizer"; Filename: "{app}\OverwatchRandomizer.Modern.exe"; Tasks: desktopicon
+Name: "{userdesktop}\Overwatch Randomizer"; Filename: "{app}\OverwatchRandomizer.Modern.exe"; Tasks: desktopicon
 
 [Tasks]
 Name: "desktopicon"; Description: "Создать ярлык на рабочем столе"; GroupDescription: "Дополнительно:"
