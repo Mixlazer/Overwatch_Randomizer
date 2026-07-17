@@ -4,5 +4,10 @@ __pycache__/
 
 build/
 dist/
+modern_app/bin/
+modern_app/obj/
+modern_app/releases/
+modern_app/signing/
+modern_app/models/
 
 *.log

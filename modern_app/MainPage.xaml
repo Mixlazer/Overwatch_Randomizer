@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OverwatchRandomizer.Modern.MainPage"
+             BackgroundColor="{StaticResource PageBg}"
+             Shell.NavBarIsVisible="False">
+  <Grid>
+  <Grid x:Name="MainLayout" RowDefinitions="64,54,*,68">
+    <Grid Padding="18,10" ColumnDefinitions="Auto,*,Auto">
+      <Grid.Background>
+        <LinearGradientBrush EndPoint="1,0">
+          <GradientStop Color="#071522" Offset="0" />
+          <GradientStop Color="#15202A" Offset="1" />
+        </LinearGradientBrush>
+      </Grid.Background>
+      <Image Source="brand_icon.png" WidthRequest="38" HeightRequest="38" />
+      <Label x:Name="TitleLabel" Grid.Column="1" Text="Overwatch Randomizer" FontSize="18" FontFamily="OpenSansSemibold"
+             VerticalTextAlignment="Center" Margin="10,0,8,0" LineBreakMode="TailTruncation" />
+      <Border Grid.Column="2" Stroke="#FF8A16" StrokeThickness="1" Padding="4,0">
+        <Picker x:Name="LanguagePicker" WidthRequest="82" BackgroundColor="Transparent"
+                HorizontalTextAlignment="Center"
+                SelectedIndexChanged="ChangeLanguage" />
+      </Border>
+    </Grid>
+
+    <Grid Grid.Row="1" Padding="10,5" ColumnDefinitions="*,*,*,*" ColumnSpacing="5" BackgroundColor="#0E151C">
+      <Button x:Name="RandomizerTabButton" Text="Рандом" FontSize="12" Padding="4" Clicked="ShowRandomizer" />
+      <Button x:Name="GameTabButton" Grid.Column="1" Text="Игра" FontSize="12" Padding="4" Clicked="ShowGame" />
+      <Button x:Name="CounterTabButton" Grid.Column="2" Text="Контры" FontSize="12" Padding="4" Clicked="ShowCounterpicks" />
+      <Button x:Name="ChatTabButton" Grid.Column="3" Text="ИИ-чат" FontSize="12" Padding="4" Clicked="ShowChat" />
+    </Grid>
+
+    <ScrollView Grid.Row="2" x:Name="BodyScroll">
+      <VerticalStackLayout x:Name="ContentStack" Padding="16,14" Spacing="10" />
+    </ScrollView>
+
+    <Grid Grid.Row="3" x:Name="RandomizerFooter" Padding="16,8" ColumnDefinitions="*,2*" ColumnSpacing="10" BackgroundColor="#0E151C">
+      <Button x:Name="RolesButton" Text="↻  Роли" Clicked="GenerateRoles" />
+      <Button x:Name="HeroesButton" Grid.Column="1" Text="◆  Персонажи" Style="{StaticResource PrimaryButton}" Clicked="GenerateHeroes" />
+    </Grid>
+
+    <Grid Grid.Row="3" x:Name="GameFooter" IsVisible="False" Padding="16,8" ColumnDefinitions="*,*,1.3*" ColumnSpacing="8" BackgroundColor="#0E151C">
+      <Button x:Name="EmergencyButton" Text="↻  Аварийный 1/1" Clicked="EmergencyReroll" />
+      <Button x:Name="ScreenshotButton" Grid.Column="1" Text="▣  Скриншот" Clicked="LoadScreenshot" />
+      <Button x:Name="FinishRoundButton" Grid.Column="2" Text="Новый раунд" Style="{StaticResource PrimaryButton}" Clicked="FinishRound" />
+    </Grid>
+
+    <Grid Grid.Row="3" x:Name="CounterFooter" IsVisible="False" Padding="16,8" ColumnDefinitions="*,1.5*" ColumnSpacing="8" BackgroundColor="#0E151C">
+      <Button x:Name="EnemyScreenshotButton" Text="▣  Скриншот" Clicked="ReadEnemyScreenshot" />
+      <Button x:Name="CalculateCounterButton" Grid.Column="1" Text="◆  Рассчитать" Style="{StaticResource PrimaryButton}" Clicked="CalculateCounterpicks" />
+    </Grid>
+
+    <Grid Grid.Row="3" x:Name="ChatFooter" IsVisible="False" Padding="16,8" ColumnDefinitions="*,Auto" ColumnSpacing="8" BackgroundColor="#0E151C">
+      <Entry x:Name="ChatEntry" Placeholder="Сообщение локальной модели…" ReturnType="Send" Completed="SendChat" />
+      <Button x:Name="ChatSendButton" Grid.Column="1" Text="Отправить" Style="{StaticResource PrimaryButton}" Clicked="SendChat" />
+    </Grid>
+  </Grid>
+
+    <Grid x:Name="AiSetupOverlay" IsVisible="False" BackgroundColor="#071522" Padding="20">
+      <Border MaximumWidthRequest="560" HorizontalOptions="Center" VerticalOptions="Center"
+              Padding="24" Stroke="#FF8A16" StrokeThickness="1" BackgroundColor="#111820">
+        <VerticalStackLayout Spacing="16">
+          <Border HorizontalOptions="End" Stroke="#FF8A16" StrokeThickness="1" Padding="4,0">
+            <Picker x:Name="AiLanguagePicker" WidthRequest="82" HorizontalTextAlignment="Center"
+                    SelectedIndexChanged="ChangeOnboardingLanguage" />
+          </Border>
+          <Label x:Name="AiSetupTitle" Text="Включить функции ИИ?" FontSize="24"
+                 FontFamily="OpenSansSemibold" HorizontalTextAlignment="Center" />
+          <Label x:Name="AiSetupDescription" FontSize="14" LineBreakMode="WordWrap"
+                 Text="Для распознавания скриншотов и ИИ-чата потребуется один раз скачать около 740 МБ. Рекомендуется Wi-Fi." />
+          <ProgressBar x:Name="AiSetupProgress" IsVisible="False" ProgressColor="#FF8A16" />
+          <Label x:Name="AiSetupProgressLabel" IsVisible="False" FontSize="12" TextColor="#93A0AD"
+                 HorizontalTextAlignment="Center" />
+          <Button x:Name="AiEnableButton" Text="Обычный ИИ — Q4_K_M"
+                  Style="{StaticResource PrimaryButton}" Clicked="ChooseEnableAi" />
+          <Label x:Name="AiAdvancedWarning" TextColor="#FF5252" FontSize="12"
+                 HorizontalTextAlignment="Center" />
+          <Button x:Name="AiAdvancedButton" Text="Продвинутый ИИ 2B — Q4_K_M"
+                  BackgroundColor="#B71C1C" TextColor="White" Clicked="ChooseAdvancedAi" />
+          <Button x:Name="AiManualButton" Text="Нет, буду вводить вручную" Clicked="ChooseManualAi" />
+        </VerticalStackLayout>
+      </Border>
+    </Grid>
+  </Grid>
+</ContentPage>

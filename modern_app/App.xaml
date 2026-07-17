@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OverwatchRandomizer.Modern.App">
+  <Application.Resources>
+    <ResourceDictionary>
+      <Color x:Key="PageBg">#0B1016</Color>
+      <Color x:Key="PanelBg">#111820</Color>
+      <Color x:Key="PanelRaised">#18212B</Color>
+      <Color x:Key="Stroke">#2B3743</Color>
+      <Color x:Key="TextPrimary">#F4F7FA</Color>
+      <Color x:Key="TextMuted">#93A0AD</Color>
+      <Color x:Key="Accent">#FF8A16</Color>
+      <Color x:Key="Tank">#39A8FF</Color>
+      <Color x:Key="Damage">#FF5260</Color>
+      <Color x:Key="Support">#F3C84B</Color>
+
+      <Style TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="FontFamily" Value="OpenSansRegular" />
+      </Style>
+      <Style TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource PanelRaised}" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="CornerRadius" Value="6" />
+        <Setter Property="BorderColor" Value="{StaticResource Stroke}" />
+        <Setter Property="BorderWidth" Value="1" />
+        <Setter Property="HeightRequest" Value="44" />
+        <Setter Property="Padding" Value="12,6" />
+        <Setter Property="FontFamily" Value="OpenSansSemibold" />
+      </Style>
+      <Style x:Key="PrimaryButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
+        <Setter Property="TextColor" Value="#111820" />
+        <Setter Property="BorderColor" Value="{StaticResource Accent}" />
+      </Style>
+      <Style TargetType="Entry">
+        <Setter Property="BackgroundColor" Value="#0D131A" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="PlaceholderColor" Value="{StaticResource TextMuted}" />
+        <Setter Property="HeightRequest" Value="42" />
+        <Setter Property="ClearButtonVisibility" Value="WhileEditing" />
+      </Style>
+      <Style TargetType="Picker">
+        <Setter Property="BackgroundColor" Value="#0D131A" />
+        <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        <Setter Property="TitleColor" Value="{StaticResource TextMuted}" />
+        <Setter Property="HeightRequest" Value="42" />
+      </Style>
+      <Style TargetType="Border">
+        <Setter Property="BackgroundColor" Value="{StaticResource PanelBg}" />
+        <Setter Property="Stroke" Value="{StaticResource Stroke}" />
+        <Setter Property="StrokeThickness" Value="1" />
+        <Setter Property="StrokeShape" Value="RoundRectangle 6" />
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

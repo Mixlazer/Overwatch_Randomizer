@@ -1,0 +1,4083 @@
+{
+  "source": "https://counterpickgg.com/?platform=pc&gamemode=competitive&rank=platinum",
+  "platform": "pc",
+  "gamemode": "competitive",
+  "rank": "platinum",
+  "stats_last_updated": "2026-07-15T06:29:00+09:00",
+  "extracted_on": "2026-07-17",
+  "heroes": {
+    "Ana": {
+      "best_maps": [
+        "Shambali Monastery",
+        "Junkertown",
+        "Havana"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Freja",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Roadhog",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Hazard",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 39,
+      "role": "support",
+      "win_rate_percent": 51
+    },
+    "Anran": {
+      "best_maps": [
+        "Junkertown",
+        "Nepal",
+        "Hollywood"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 9,
+      "role": "damage",
+      "win_rate_percent": 52
+    },
+    "Ashe": {
+      "best_maps": [
+        "Circuit Royal",
+        "Route 66",
+        "Paraíso"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Wrecking Ball",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 12,
+      "role": "damage",
+      "win_rate_percent": 51
+    },
+    "Baptiste": {
+      "best_maps": [
+        "Esperança",
+        "Havana",
+        "Antarctic Peninsula"
+      ],
+      "countered_by": [
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Echo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 6,
+      "role": "support",
+      "win_rate_percent": 48
+    },
+    "Bastion": {
+      "best_maps": [
+        "Busan",
+        "Shambali Monastery",
+        "New Queen Street"
+      ],
+      "countered_by": [
+        {
+          "hero": "Doomfist",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Winston",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 10,
+      "role": "damage",
+      "win_rate_percent": 49
+    },
+    "Brigitte": {
+      "best_maps": [
+        "Paraíso",
+        "Lijiang Tower",
+        "Ilios"
+      ],
+      "countered_by": [
+        {
+          "hero": "Ramattra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "D.Va",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Shion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "support",
+      "win_rate_percent": 49
+    },
+    "Cassidy": {
+      "best_maps": [
+        "Oasis",
+        "Antarctic Peninsula",
+        "Route 66"
+      ],
+      "countered_by": [
+        {
+          "hero": "Junker Queen",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Freja",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Wrecking Ball",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 24,
+      "role": "damage",
+      "win_rate_percent": 47
+    },
+    "D.Va": {
+      "best_maps": [
+        "Esperança",
+        "Watchpoint: Gibraltar",
+        "Suravasa"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mizuki",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Widowmaker",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "tank",
+      "win_rate_percent": 47
+    },
+    "Domina": {
+      "best_maps": [
+        "Runasapi",
+        "Havana",
+        "Paraíso"
+      ],
+      "countered_by": [
+        {
+          "hero": "Ramattra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sojourn",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Pharah",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 3,
+      "role": "tank",
+      "win_rate_percent": 51
+    },
+    "Doomfist": {
+      "best_maps": [
+        "Junkertown",
+        "Colosseo",
+        "Eichenwalde"
+      ],
+      "countered_by": [
+        {
+          "hero": "Orisa",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 9,
+      "role": "tank",
+      "win_rate_percent": 51
+    },
+    "Echo": {
+      "best_maps": [
+        "Havana",
+        "Ilios",
+        "Esperança"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Emre",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Hazard",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mizuki",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 4,
+      "role": "damage",
+      "win_rate_percent": 53
+    },
+    "Emre": {
+      "best_maps": [
+        "New Junk City",
+        "Aatlis",
+        "Shambali Monastery"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Echo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "damage",
+      "win_rate_percent": 48
+    },
+    "Freja": {
+      "best_maps": [
+        "Suravasa",
+        "Rialto",
+        "Esperança"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Roadhog",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "damage",
+      "win_rate_percent": 52
+    },
+    "Genji": {
+      "best_maps": [
+        "Shambali Monastery",
+        "Junkertown",
+        "New Junk City"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 13,
+      "role": "damage",
+      "win_rate_percent": 52
+    },
+    "Hanzo": {
+      "best_maps": [
+        "Route 66",
+        "Havana",
+        "Circuit Royal"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Wrecking Ball",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Mauga",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 9,
+      "role": "damage",
+      "win_rate_percent": 51
+    },
+    "Hazard": {
+      "best_maps": [
+        "Watchpoint: Gibraltar",
+        "Antarctic Peninsula",
+        "Aatlis"
+      ],
+      "countered_by": [
+        {
+          "hero": "Orisa",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "tank",
+      "win_rate_percent": 53
+    },
+    "Illari": {
+      "best_maps": [
+        "New Junk City",
+        "Antarctic Peninsula",
+        "Samoa"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "support",
+      "win_rate_percent": 49
+    },
+    "Jetpack Cat": {
+      "best_maps": [
+        "Runasapi",
+        "Lijiang Tower",
+        "Shambali Monastery"
+      ],
+      "countered_by": [
+        {
+          "hero": "Mauga",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Reinhardt",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mizuki",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 6,
+      "role": "support",
+      "win_rate_percent": 49
+    },
+    "Junker Queen": {
+      "best_maps": [
+        "Suravasa",
+        "New Queen Street",
+        "Circuit Royal"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Winston",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "tank",
+      "win_rate_percent": 54
+    },
+    "Junkrat": {
+      "best_maps": [
+        "New Junk City",
+        "Dorado",
+        "Watchpoint: Gibraltar"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Freja",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "damage",
+      "win_rate_percent": 50
+    },
+    "Juno": {
+      "best_maps": [
+        "Aatlis",
+        "Oasis",
+        "Eichenwalde"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 14,
+      "role": "support",
+      "win_rate_percent": 51
+    },
+    "Kiriko": {
+      "best_maps": [
+        "New Junk City",
+        "Esperança",
+        "Suravasa"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Junker Queen",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Anran",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Sierra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 40,
+      "role": "support",
+      "win_rate_percent": 46
+    },
+    "Lifeweaver": {
+      "best_maps": [
+        "Watchpoint: Gibraltar",
+        "Paraíso",
+        "New Junk City"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Zarya",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 12,
+      "role": "support",
+      "win_rate_percent": 46
+    },
+    "Lúcio": {
+      "best_maps": [
+        "Ilios",
+        "Busan",
+        "Esperança"
+      ],
+      "countered_by": [
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Reinhardt",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 4,
+      "role": "support",
+      "win_rate_percent": 51
+    },
+    "Mauga": {
+      "best_maps": [
+        "Aatlis",
+        "Busan",
+        "Runasapi"
+      ],
+      "countered_by": [
+        {
+          "hero": "Sigma",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sojourn",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Winston",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "tank",
+      "win_rate_percent": 51
+    },
+    "Mei": {
+      "best_maps": [
+        "Esperança",
+        "Antarctic Peninsula",
+        "Nepal"
+      ],
+      "countered_by": [
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "D.Va",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Anran",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 8,
+      "role": "damage",
+      "win_rate_percent": 50
+    },
+    "Mercy": {
+      "best_maps": [
+        "Dorado",
+        "Circuit Royal",
+        "Shambali Monastery"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 13,
+      "role": "support",
+      "win_rate_percent": 52
+    },
+    "Mizuki": {
+      "best_maps": [
+        "Aatlis",
+        "Junkertown",
+        "Midtown"
+      ],
+      "countered_by": [
+        {
+          "hero": "Echo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "D.Va",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 14,
+      "role": "support",
+      "win_rate_percent": 51
+    },
+    "Moira": {
+      "best_maps": [
+        "Runasapi",
+        "Oasis",
+        "Lijiang Tower"
+      ],
+      "countered_by": [
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Wrecking Ball",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 23,
+      "role": "support",
+      "win_rate_percent": 50
+    },
+    "Orisa": {
+      "best_maps": [
+        "Antarctic Peninsula",
+        "Oasis",
+        "Rialto"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Anran",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 10,
+      "role": "tank",
+      "win_rate_percent": 44
+    },
+    "Pharah": {
+      "best_maps": [
+        "Lijiang Tower",
+        "Nepal",
+        "Dorado"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Reinhardt",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Hazard",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "damage",
+      "win_rate_percent": 54
+    },
+    "Ramattra": {
+      "best_maps": [
+        "Shambali Monastery",
+        "Route 66",
+        "Circuit Royal"
+      ],
+      "countered_by": [
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Reinhardt",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "tank",
+      "win_rate_percent": 48
+    },
+    "Reaper": {
+      "best_maps": [
+        "Oasis",
+        "New Queen Street",
+        "Ilios"
+      ],
+      "countered_by": [
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Mauga",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Anran",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 10,
+      "role": "damage",
+      "win_rate_percent": 49
+    },
+    "Reinhardt": {
+      "best_maps": [
+        "Esperança",
+        "Route 66",
+        "Rialto"
+      ],
+      "countered_by": [
+        {
+          "hero": "Orisa",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ramattra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 13,
+      "role": "tank",
+      "win_rate_percent": 50
+    },
+    "Roadhog": {
+      "best_maps": [
+        "Aatlis",
+        "New Junk City",
+        "Ilios"
+      ],
+      "countered_by": [
+        {
+          "hero": "Orisa",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Hazard",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 8,
+      "role": "tank",
+      "win_rate_percent": 46
+    },
+    "Shion": {
+      "best_maps": [
+        "Runasapi",
+        "Dorado",
+        "Suravasa"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 11,
+      "role": "damage",
+      "win_rate_percent": 52
+    },
+    "Sierra": {
+      "best_maps": [
+        "Hollywood",
+        "Junkertown",
+        "Rialto"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 10,
+      "role": "damage",
+      "win_rate_percent": 49
+    },
+    "Sigma": {
+      "best_maps": [
+        "Circuit Royal",
+        "Junkertown",
+        "Shambali Monastery"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Mauga",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Hazard",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 11,
+      "role": "tank",
+      "win_rate_percent": 50
+    },
+    "Sojourn": {
+      "best_maps": [
+        "Lijiang Tower",
+        "Runasapi",
+        "Shambali Monastery"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Domina",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Illari",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 11,
+      "role": "damage",
+      "win_rate_percent": 46
+    },
+    "Soldier: 76": {
+      "best_maps": [
+        "Runasapi",
+        "Antarctic Peninsula",
+        "Numbani"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Venture",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Echo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 16,
+      "role": "damage",
+      "win_rate_percent": 48
+    },
+    "Sombra": {
+      "best_maps": [
+        "Shambali Monastery",
+        "New Queen Street",
+        "Numbani"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Wrecking Ball",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 4,
+      "role": "damage",
+      "win_rate_percent": 46
+    },
+    "Symmetra": {
+      "best_maps": [
+        "Aatlis",
+        "Lijiang Tower",
+        "Antarctic Peninsula"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Reinhardt",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Anran",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 3,
+      "role": "damage",
+      "win_rate_percent": 52
+    },
+    "Torbjörn": {
+      "best_maps": [
+        "Suravasa",
+        "Oasis",
+        "Runasapi"
+      ],
+      "countered_by": [
+        {
+          "hero": "Sigma",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ramattra",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Winston",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 4,
+      "role": "damage",
+      "win_rate_percent": 52
+    },
+    "Tracer": {
+      "best_maps": [
+        "Junkertown",
+        "Colosseo",
+        "Antarctic Peninsula"
+      ],
+      "countered_by": [
+        {
+          "hero": "Cassidy",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 8,
+      "role": "damage",
+      "win_rate_percent": 51
+    },
+    "Vendetta": {
+      "best_maps": [
+        "Rialto",
+        "Antarctic Peninsula",
+        "Suravasa"
+      ],
+      "countered_by": [
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mizuki",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 4,
+      "role": "damage",
+      "win_rate_percent": 53
+    },
+    "Venture": {
+      "best_maps": [
+        "Shambali Monastery",
+        "Junkertown",
+        "Aatlis"
+      ],
+      "countered_by": [
+        {
+          "hero": "Echo",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Soldier: 76",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 2,
+      "role": "damage",
+      "win_rate_percent": 49
+    },
+    "Widowmaker": {
+      "best_maps": [
+        "New Junk City",
+        "Havana",
+        "Midtown"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Kiriko",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Zarya",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 5,
+      "role": "damage",
+      "win_rate_percent": 50
+    },
+    "Winston": {
+      "best_maps": [
+        "Junkertown",
+        "Watchpoint: Gibraltar",
+        "Dorado"
+      ],
+      "countered_by": [
+        {
+          "hero": "Junker Queen",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Reaper",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Zarya",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Zenyatta",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 2,
+          "strength_label": "2/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "tank",
+      "win_rate_percent": 51
+    },
+    "Wrecking Ball": {
+      "best_maps": [
+        "Dorado",
+        "Junkertown",
+        "Colosseo"
+      ],
+      "countered_by": [
+        {
+          "hero": "Mauga",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Orisa",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Pharah",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Moira",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Hanzo",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 4,
+      "role": "tank",
+      "win_rate_percent": 53
+    },
+    "Wuyang": {
+      "best_maps": [
+        "Havana",
+        "Runasapi",
+        "Rialto"
+      ],
+      "countered_by": [
+        {
+          "hero": "Zarya",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Sigma",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Echo",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Reinhardt",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ramattra",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 8,
+      "role": "support",
+      "win_rate_percent": 52
+    },
+    "Zarya": {
+      "best_maps": [
+        "Antarctic Peninsula",
+        "Samoa",
+        "Shambali Monastery"
+      ],
+      "countered_by": [
+        {
+          "hero": "Winston",
+          "strength": 9,
+          "strength_label": "9/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Widowmaker",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Ashe",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 8,
+          "strength_label": "8/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "D.Va",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junker Queen",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Genji",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Junkrat",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Symmetra",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 1,
+          "strength_label": "1/10"
+        },
+        {
+          "hero": "Wuyang",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 7,
+      "role": "tank",
+      "win_rate_percent": 51
+    },
+    "Zenyatta": {
+      "best_maps": [
+        "Havana",
+        "Runasapi",
+        "Busan"
+      ],
+      "countered_by": [
+        {
+          "hero": "D.Va",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Doomfist",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Winston",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Tracer",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Venture",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Vendetta",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Lúcio",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Juno",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Orisa",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Roadhog",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Mauga",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 12,
+      "role": "support",
+      "win_rate_percent": 52
+    }
+  }
+}

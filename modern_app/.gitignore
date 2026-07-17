@@ -1,0 +1,7 @@
+bin/
+obj/
+releases/
+signing/
+*.user
+*.keystore
+password.txt

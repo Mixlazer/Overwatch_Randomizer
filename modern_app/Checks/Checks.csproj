@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\Core\GameRules.cs" Link="GameRules.cs" />
+    <Compile Include="..\Core\GameSession.cs" Link="GameSession.cs" />
+    <Compile Include="..\Core\ScoreboardParser.cs" Link="ScoreboardParser.cs" />
+    <Compile Include="..\Core\CounterpickEngine.cs" Link="CounterpickEngine.cs" />
+  </ItemGroup>
+</Project>
