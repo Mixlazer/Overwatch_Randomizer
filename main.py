@@ -14,10 +14,10 @@ from ocr_helper import extract_stats_from_rows, parse_scoreboard_screenshot as p
 # English roles
 roles = ['Tank', 'Damage', 'Support']
 
-# Full roster by role
+# Live roster verified 2026-09-19: https://overwatch.blizzard.com/en-us/heroes/
 characters_by_role_full = {
     'Tank': [
-        'D.Va', 'Domina', 'Doomfist', 'Hazard', 'Junker Queen', 'Mauga', 'Orisa',
+        'D.Mon', 'D.Va', 'Domina', 'Doomfist', 'Hazard', 'Junker Queen', 'Mauga', 'Orisa',
         'Ramattra', 'Reinhardt', 'Roadhog', 'Sigma', 'Winston', 'Wrecking Ball', 'Zarya'
     ],
     'Damage': [
@@ -171,6 +171,9 @@ def parse_scoreboard_screenshot(path, player_names):
 
 def self_check():
     all_characters = {ch for roster in characters_by_role_full.values() for ch in roster}
+    assert len(all_characters) == sum(map(len, characters_by_role_full.values())) == 53
+    assert len(set(stadium_characters)) == len(stadium_characters) == 33
+    assert hero_role('D.Mon') == 'Tank' and 'D.Mon' not in stadium_characters
     assert set(stadium_characters) <= all_characters
     assert all(icon_path(ch) for ch in all_characters)
     assert all(png_size(icon_path(ch)) == (50, 50) for ch in all_characters)

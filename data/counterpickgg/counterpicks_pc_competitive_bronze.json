@@ -3,14 +3,14 @@
   "platform": "pc",
   "gamemode": "competitive",
   "rank": "bronze",
-  "stats_last_updated": "2026-07-15T06:29:00+09:00",
-  "extracted_on": "2026-07-17",
+  "stats_last_updated": "2026-09-19T07:43:06.335+09:00",
+  "extracted_on": "2026-09-19",
   "heroes": {
     "Ana": {
       "best_maps": [
-        "Shambali Monastery",
-        "Junkertown",
-        "Havana"
+        "Havana",
+        "Rialto",
+        "Junkertown"
       ],
       "countered_by": [
         {
@@ -86,15 +86,15 @@
           "strength_label": "2/10"
         }
       ],
-      "pick_rate_percent": 18,
+      "pick_rate_percent": 19,
       "role": "support",
       "win_rate_percent": 49
     },
     "Anran": {
       "best_maps": [
-        "Junkertown",
-        "Nepal",
-        "Hollywood"
+        "Colosseo",
+        "New Queen Street",
+        "Esperança"
       ],
       "countered_by": [
         {
@@ -170,15 +170,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 13,
+      "pick_rate_percent": 11,
       "role": "damage",
-      "win_rate_percent": 53
+      "win_rate_percent": 52
     },
     "Ashe": {
       "best_maps": [
         "Circuit Royal",
-        "Route 66",
-        "Paraíso"
+        "Junkertown",
+        "Havana"
       ],
       "countered_by": [
         {
@@ -276,13 +276,13 @@
       ],
       "pick_rate_percent": 10,
       "role": "damage",
-      "win_rate_percent": 52
+      "win_rate_percent": 50
     },
     "Baptiste": {
       "best_maps": [
-        "Esperança",
-        "Havana",
-        "Antarctic Peninsula"
+        "Antarctic Peninsula",
+        "Circuit Royal",
+        "Oasis"
       ],
       "countered_by": [
         {
@@ -297,6 +297,11 @@
         }
       ],
       "counters": [
+        {
+          "hero": "D.Mon",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
         {
           "hero": "Echo",
           "strength": 2,
@@ -323,15 +328,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 5,
+      "pick_rate_percent": 6,
       "role": "support",
-      "win_rate_percent": 46
+      "win_rate_percent": 48
     },
     "Bastion": {
       "best_maps": [
-        "Busan",
-        "Shambali Monastery",
-        "New Queen Street"
+        "Antarctic Peninsula",
+        "Circuit Royal",
+        "Nepal"
       ],
       "countered_by": [
         {
@@ -418,9 +423,9 @@
     },
     "Brigitte": {
       "best_maps": [
-        "Paraíso",
-        "Lijiang Tower",
-        "Ilios"
+        "New Junk City",
+        "Ilios",
+        "Aatlis"
       ],
       "countered_by": [
         {
@@ -502,9 +507,9 @@
     },
     "Cassidy": {
       "best_maps": [
-        "Oasis",
         "Antarctic Peninsula",
-        "Route 66"
+        "Oasis",
+        "Busan"
       ],
       "countered_by": [
         {
@@ -590,15 +595,114 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 12,
+      "pick_rate_percent": 11,
       "role": "damage",
       "win_rate_percent": 50
     },
+    "D.Mon": {
+      "best_maps": [
+        "Aatlis",
+        "New Junk City",
+        "Runasapi"
+      ],
+      "countered_by": [
+        {
+          "hero": "Ramattra",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Reinhardt",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Mei",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Torbjörn",
+          "strength": 8,
+          "strength_label": "8/10"
+        },
+        {
+          "hero": "Bastion",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Baptiste",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Lifeweaver",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "Jetpack Cat",
+          "strength": 7,
+          "strength_label": "7/10"
+        }
+      ],
+      "counters": [
+        {
+          "hero": "Sigma",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Zarya",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Domina",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Cassidy",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Sombra",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Shion",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Ana",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
+          "hero": "Brigitte",
+          "strength": 3,
+          "strength_label": "3/10"
+        },
+        {
+          "hero": "Mercy",
+          "strength": 3,
+          "strength_label": "3/10"
+        }
+      ],
+      "pick_rate_percent": 9,
+      "role": "tank",
+      "win_rate_percent": 57
+    },
     "D.Va": {
       "best_maps": [
-        "Esperança",
         "Watchpoint: Gibraltar",
-        "Suravasa"
+        "Dorado",
+        "Numbani"
       ],
       "countered_by": [
         {
@@ -669,15 +773,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 10,
+      "pick_rate_percent": 9,
       "role": "tank",
-      "win_rate_percent": 44
+      "win_rate_percent": 46
     },
     "Domina": {
       "best_maps": [
-        "Runasapi",
-        "Havana",
-        "Paraíso"
+        "Circuit Royal",
+        "Rialto",
+        "Antarctic Peninsula"
       ],
       "countered_by": [
         {
@@ -744,9 +848,9 @@
     },
     "Doomfist": {
       "best_maps": [
-        "Junkertown",
         "Colosseo",
-        "Eichenwalde"
+        "Suravasa",
+        "Dorado"
       ],
       "countered_by": [
         {
@@ -814,13 +918,13 @@
       ],
       "pick_rate_percent": 4,
       "role": "tank",
-      "win_rate_percent": 48
+      "win_rate_percent": 53
     },
     "Echo": {
       "best_maps": [
-        "Havana",
-        "Ilios",
-        "Esperança"
+        "Eichenwalde",
+        "Watchpoint: Gibraltar",
+        "Ilios"
       ],
       "countered_by": [
         {
@@ -913,13 +1017,13 @@
       ],
       "pick_rate_percent": 4,
       "role": "damage",
-      "win_rate_percent": 49
+      "win_rate_percent": 47
     },
     "Emre": {
       "best_maps": [
-        "New Junk City",
-        "Aatlis",
-        "Shambali Monastery"
+        "Havana",
+        "Busan",
+        "Circuit Royal"
       ],
       "countered_by": [
         {
@@ -967,13 +1071,13 @@
       ],
       "pick_rate_percent": 6,
       "role": "damage",
-      "win_rate_percent": 48
+      "win_rate_percent": 49
     },
     "Freja": {
       "best_maps": [
-        "Suravasa",
-        "Rialto",
-        "Esperança"
+        "Junkertown",
+        "Route 66",
+        "Dorado"
       ],
       "countered_by": [
         {
@@ -1041,13 +1145,13 @@
       ],
       "pick_rate_percent": 5,
       "role": "damage",
-      "win_rate_percent": 48
+      "win_rate_percent": 47
     },
     "Genji": {
       "best_maps": [
-        "Shambali Monastery",
-        "Junkertown",
-        "New Junk City"
+        "Colosseo",
+        "Watchpoint: Gibraltar",
+        "Route 66"
       ],
       "countered_by": [
         {
@@ -1128,15 +1232,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 8,
+      "pick_rate_percent": 7,
       "role": "damage",
-      "win_rate_percent": 54
+      "win_rate_percent": 51
     },
     "Hanzo": {
       "best_maps": [
-        "Route 66",
-        "Havana",
-        "Circuit Royal"
+        "Shambali Monastery",
+        "Circuit Royal",
+        "Rialto"
       ],
       "countered_by": [
         {
@@ -1224,13 +1328,13 @@
       ],
       "pick_rate_percent": 7,
       "role": "damage",
-      "win_rate_percent": 53
+      "win_rate_percent": 49
     },
     "Hazard": {
       "best_maps": [
-        "Watchpoint: Gibraltar",
-        "Antarctic Peninsula",
-        "Aatlis"
+        "Dorado",
+        "Ilios",
+        "New Junk City"
       ],
       "countered_by": [
         {
@@ -1291,15 +1395,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 3,
+      "pick_rate_percent": 2,
       "role": "tank",
       "win_rate_percent": 50
     },
     "Illari": {
       "best_maps": [
-        "New Junk City",
         "Antarctic Peninsula",
-        "Samoa"
+        "Samoa",
+        "Junkertown"
       ],
       "countered_by": [
         {
@@ -1356,9 +1460,9 @@
     },
     "Jetpack Cat": {
       "best_maps": [
-        "Runasapi",
+        "Ilios",
         "Lijiang Tower",
-        "Shambali Monastery"
+        "Nepal"
       ],
       "countered_by": [
         {
@@ -1444,15 +1548,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 6,
+      "pick_rate_percent": 5,
       "role": "support",
-      "win_rate_percent": 47
+      "win_rate_percent": 50
     },
     "Junker Queen": {
       "best_maps": [
-        "Suravasa",
-        "New Queen Street",
-        "Circuit Royal"
+        "Aatlis",
+        "New Junk City",
+        "Runasapi"
       ],
       "countered_by": [
         {
@@ -1513,15 +1617,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 4,
+      "pick_rate_percent": 3,
       "role": "tank",
-      "win_rate_percent": 48
+      "win_rate_percent": 52
     },
     "Junkrat": {
       "best_maps": [
-        "New Junk City",
-        "Dorado",
-        "Watchpoint: Gibraltar"
+        "Nepal",
+        "Ilios",
+        "Lijiang Tower"
       ],
       "countered_by": [
         {
@@ -1592,15 +1696,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 13,
+      "pick_rate_percent": 11,
       "role": "damage",
-      "win_rate_percent": 49
+      "win_rate_percent": 50
     },
     "Juno": {
       "best_maps": [
-        "Aatlis",
-        "Oasis",
-        "Eichenwalde"
+        "Runasapi",
+        "Circuit Royal",
+        "Route 66"
       ],
       "countered_by": [
         {
@@ -1681,15 +1785,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 19,
+      "pick_rate_percent": 26,
       "role": "support",
       "win_rate_percent": 50
     },
     "Kiriko": {
       "best_maps": [
-        "New Junk City",
-        "Esperança",
-        "Suravasa"
+        "Shambali Monastery",
+        "Watchpoint: Gibraltar",
+        "Esperança"
       ],
       "countered_by": [
         {
@@ -1730,15 +1834,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 37,
+      "pick_rate_percent": 33,
       "role": "support",
-      "win_rate_percent": 49
+      "win_rate_percent": 47
     },
     "Lifeweaver": {
       "best_maps": [
-        "Watchpoint: Gibraltar",
-        "Paraíso",
-        "New Junk City"
+        "Dorado",
+        "Junkertown",
+        "Havana"
       ],
       "countered_by": [
         {
@@ -1777,17 +1881,22 @@
           "hero": "Doomfist",
           "strength": 3,
           "strength_label": "3/10"
+        },
+        {
+          "hero": "D.Mon",
+          "strength": 3,
+          "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 11,
+      "pick_rate_percent": 10,
       "role": "support",
-      "win_rate_percent": 49
+      "win_rate_percent": 48
     },
     "Lúcio": {
       "best_maps": [
         "Ilios",
-        "Busan",
-        "Esperança"
+        "Lijiang Tower",
+        "Suravasa"
       ],
       "countered_by": [
         {
@@ -1855,13 +1964,13 @@
       ],
       "pick_rate_percent": 6,
       "role": "support",
-      "win_rate_percent": 49
+      "win_rate_percent": 48
     },
     "Mauga": {
       "best_maps": [
         "Aatlis",
-        "Busan",
-        "Runasapi"
+        "Antarctic Peninsula",
+        "Busan"
       ],
       "countered_by": [
         {
@@ -1937,15 +2046,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 8,
+      "pick_rate_percent": 5,
       "role": "tank",
-      "win_rate_percent": 50
+      "win_rate_percent": 43
     },
     "Mei": {
       "best_maps": [
-        "Esperança",
-        "Antarctic Peninsula",
-        "Nepal"
+        "Rialto",
+        "Nepal",
+        "Suravasa"
       ],
       "countered_by": [
         {
@@ -1981,17 +2090,17 @@
       ],
       "counters": [
         {
+          "hero": "D.Mon",
+          "strength": 2,
+          "strength_label": "2/10"
+        },
+        {
           "hero": "D.Va",
           "strength": 3,
           "strength_label": "3/10"
         },
         {
           "hero": "Doomfist",
-          "strength": 3,
-          "strength_label": "3/10"
-        },
-        {
-          "hero": "Orisa",
           "strength": 3,
           "strength_label": "3/10"
         },
@@ -2011,15 +2120,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 9,
+      "pick_rate_percent": 8,
       "role": "damage",
-      "win_rate_percent": 53
+      "win_rate_percent": 52
     },
     "Mercy": {
       "best_maps": [
+        "Route 66",
         "Dorado",
-        "Circuit Royal",
-        "Shambali Monastery"
+        "Runasapi"
       ],
       "countered_by": [
         {
@@ -2090,15 +2199,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 21,
+      "pick_rate_percent": 17,
       "role": "support",
-      "win_rate_percent": 44
+      "win_rate_percent": 47
     },
     "Mizuki": {
       "best_maps": [
-        "Aatlis",
-        "Junkertown",
-        "Midtown"
+        "Antarctic Peninsula",
+        "Samoa",
+        "Lijiang Tower"
       ],
       "countered_by": [
         {
@@ -2139,15 +2248,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 17,
+      "pick_rate_percent": 15,
       "role": "support",
-      "win_rate_percent": 52
+      "win_rate_percent": 53
     },
     "Moira": {
       "best_maps": [
-        "Runasapi",
-        "Oasis",
-        "Lijiang Tower"
+        "Nepal",
+        "Lijiang Tower",
+        "Oasis"
       ],
       "countered_by": [
         {
@@ -2213,15 +2322,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 33,
+      "pick_rate_percent": 37,
       "role": "support",
-      "win_rate_percent": 51
+      "win_rate_percent": 53
     },
     "Orisa": {
       "best_maps": [
-        "Antarctic Peninsula",
+        "Havana",
         "Oasis",
-        "Rialto"
+        "Lijiang Tower"
       ],
       "countered_by": [
         {
@@ -2284,8 +2393,8 @@
     "Pharah": {
       "best_maps": [
         "Lijiang Tower",
-        "Nepal",
-        "Dorado"
+        "Ilios",
+        "Nepal"
       ],
       "countered_by": [
         {
@@ -2381,15 +2490,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 6,
+      "pick_rate_percent": 4,
       "role": "damage",
-      "win_rate_percent": 50
+      "win_rate_percent": 51
     },
     "Ramattra": {
       "best_maps": [
         "Shambali Monastery",
-        "Route 66",
-        "Circuit Royal"
+        "Nepal",
+        "Rialto"
       ],
       "countered_by": [
         {
@@ -2425,9 +2534,9 @@
           "strength_label": "2/10"
         },
         {
-          "hero": "Winston",
-          "strength": 3,
-          "strength_label": "3/10"
+          "hero": "D.Mon",
+          "strength": 2,
+          "strength_label": "2/10"
         },
         {
           "hero": "Torbjörn",
@@ -2440,15 +2549,15 @@
           "strength_label": "2/10"
         }
       ],
-      "pick_rate_percent": 10,
+      "pick_rate_percent": 11,
       "role": "tank",
-      "win_rate_percent": 54
+      "win_rate_percent": 50
     },
     "Reaper": {
       "best_maps": [
-        "Oasis",
-        "New Queen Street",
-        "Ilios"
+        "Ilios",
+        "Antarctic Peninsula",
+        "Samoa"
       ],
       "countered_by": [
         {
@@ -2524,15 +2633,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 8,
+      "pick_rate_percent": 10,
       "role": "damage",
-      "win_rate_percent": 47
+      "win_rate_percent": 53
     },
     "Reinhardt": {
       "best_maps": [
-        "Esperança",
-        "Route 66",
-        "Rialto"
+        "Lijiang Tower",
+        "Rialto",
+        "Nepal"
       ],
       "countered_by": [
         {
@@ -2603,15 +2712,15 @@
           "strength_label": "2/10"
         }
       ],
-      "pick_rate_percent": 13,
+      "pick_rate_percent": 11,
       "role": "tank",
       "win_rate_percent": 53
     },
     "Roadhog": {
       "best_maps": [
-        "Aatlis",
-        "New Junk City",
-        "Ilios"
+        "Ilios",
+        "Oasis",
+        "Busan"
       ],
       "countered_by": [
         {
@@ -2682,14 +2791,14 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 6,
+      "pick_rate_percent": 5,
       "role": "tank",
-      "win_rate_percent": 49
+      "win_rate_percent": 47
     },
     "Shion": {
       "best_maps": [
-        "Runasapi",
-        "Dorado",
+        "Aatlis",
+        "New Junk City",
         "Suravasa"
       ],
       "countered_by": [
@@ -2766,15 +2875,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 13,
+      "pick_rate_percent": 11,
       "role": "damage",
-      "win_rate_percent": 47
+      "win_rate_percent": 49
     },
     "Sierra": {
       "best_maps": [
-        "Hollywood",
-        "Junkertown",
-        "Rialto"
+        "Circuit Royal",
+        "Dorado",
+        "Havana"
       ],
       "countered_by": [
         {
@@ -2825,15 +2934,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 16,
+      "pick_rate_percent": 21,
       "role": "damage",
       "win_rate_percent": 50
     },
     "Sigma": {
       "best_maps": [
         "Circuit Royal",
-        "Junkertown",
-        "Shambali Monastery"
+        "Havana",
+        "Junkertown"
       ],
       "countered_by": [
         {
@@ -2847,9 +2956,9 @@
           "strength_label": "8/10"
         },
         {
-          "hero": "Reinhardt",
-          "strength": 7,
-          "strength_label": "7/10"
+          "hero": "D.Mon",
+          "strength": 8,
+          "strength_label": "8/10"
         },
         {
           "hero": "Sombra",
@@ -2929,14 +3038,14 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 13,
+      "pick_rate_percent": 12,
       "role": "tank",
       "win_rate_percent": 50
     },
     "Sojourn": {
       "best_maps": [
-        "Lijiang Tower",
-        "Runasapi",
+        "Circuit Royal",
+        "Havana",
         "Shambali Monastery"
       ],
       "countered_by": [
@@ -2993,15 +3102,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 10,
+      "pick_rate_percent": 12,
       "role": "damage",
-      "win_rate_percent": 46
+      "win_rate_percent": 44
     },
     "Soldier: 76": {
       "best_maps": [
-        "Runasapi",
-        "Antarctic Peninsula",
-        "Numbani"
+        "New Queen Street",
+        "Esperança",
+        "Busan"
       ],
       "countered_by": [
         {
@@ -3067,15 +3176,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 16,
+      "pick_rate_percent": 14,
       "role": "damage",
-      "win_rate_percent": 50
+      "win_rate_percent": 48
     },
     "Sombra": {
       "best_maps": [
-        "Shambali Monastery",
-        "New Queen Street",
-        "Numbani"
+        "Runasapi",
+        "Colosseo",
+        "Watchpoint: Gibraltar"
       ],
       "countered_by": [
         {
@@ -3085,6 +3194,11 @@
         },
         {
           "hero": "Zarya",
+          "strength": 7,
+          "strength_label": "7/10"
+        },
+        {
+          "hero": "D.Mon",
           "strength": 7,
           "strength_label": "7/10"
         },
@@ -3166,14 +3280,14 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 3,
+      "pick_rate_percent": 2,
       "role": "damage",
       "win_rate_percent": 49
     },
     "Symmetra": {
       "best_maps": [
-        "Aatlis",
         "Lijiang Tower",
+        "Nepal",
         "Antarctic Peninsula"
       ],
       "countered_by": [
@@ -3257,13 +3371,13 @@
       ],
       "pick_rate_percent": 3,
       "role": "damage",
-      "win_rate_percent": 55
+      "win_rate_percent": 50
     },
     "Torbjörn": {
       "best_maps": [
-        "Suravasa",
-        "Oasis",
-        "Runasapi"
+        "Nepal",
+        "Antarctic Peninsula",
+        "New Junk City"
       ],
       "countered_by": [
         {
@@ -3314,9 +3428,9 @@
           "strength_label": "2/10"
         },
         {
-          "hero": "Doomfist",
-          "strength": 3,
-          "strength_label": "3/10"
+          "hero": "D.Mon",
+          "strength": 2,
+          "strength_label": "2/10"
         },
         {
           "hero": "Tracer",
@@ -3344,15 +3458,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 5,
+      "pick_rate_percent": 6,
       "role": "damage",
-      "win_rate_percent": 49
+      "win_rate_percent": 52
     },
     "Tracer": {
       "best_maps": [
-        "Junkertown",
         "Colosseo",
-        "Antarctic Peninsula"
+        "Aatlis",
+        "New Junk City"
       ],
       "countered_by": [
         {
@@ -3423,15 +3537,15 @@
           "strength_label": "2/10"
         }
       ],
-      "pick_rate_percent": 4,
+      "pick_rate_percent": 5,
       "role": "damage",
       "win_rate_percent": 50
     },
     "Vendetta": {
       "best_maps": [
-        "Rialto",
-        "Antarctic Peninsula",
-        "Suravasa"
+        "Aatlis",
+        "Dorado",
+        "Route 66"
       ],
       "countered_by": [
         {
@@ -3512,15 +3626,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 4,
+      "pick_rate_percent": 5,
       "role": "damage",
-      "win_rate_percent": 51
+      "win_rate_percent": 55
     },
     "Venture": {
       "best_maps": [
-        "Shambali Monastery",
-        "Junkertown",
-        "Aatlis"
+        "Aatlis",
+        "Neon Junction",
+        "Colosseo"
       ],
       "countered_by": [
         {
@@ -3583,13 +3697,13 @@
       ],
       "pick_rate_percent": 2,
       "role": "damage",
-      "win_rate_percent": 44
+      "win_rate_percent": 52
     },
     "Widowmaker": {
       "best_maps": [
-        "New Junk City",
         "Havana",
-        "Midtown"
+        "Junkertown",
+        "King's Row"
       ],
       "countered_by": [
         {
@@ -3680,14 +3794,14 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 5,
+      "pick_rate_percent": 6,
       "role": "damage",
-      "win_rate_percent": 43
+      "win_rate_percent": 47
     },
     "Winston": {
       "best_maps": [
-        "Junkertown",
         "Watchpoint: Gibraltar",
+        "Colosseo",
         "Dorado"
       ],
       "countered_by": [
@@ -3774,15 +3888,15 @@
           "strength_label": "2/10"
         }
       ],
-      "pick_rate_percent": 4,
+      "pick_rate_percent": 5,
       "role": "tank",
       "win_rate_percent": 50
     },
     "Wrecking Ball": {
       "best_maps": [
-        "Dorado",
         "Junkertown",
-        "Colosseo"
+        "Colosseo",
+        "Watchpoint: Gibraltar"
       ],
       "countered_by": [
         {
@@ -3848,15 +3962,15 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 3,
+      "pick_rate_percent": 2,
       "role": "tank",
-      "win_rate_percent": 56
+      "win_rate_percent": 48
     },
     "Wuyang": {
       "best_maps": [
-        "Havana",
-        "Runasapi",
-        "Rialto"
+        "Watchpoint: Gibraltar",
+        "New Queen Street",
+        "Colosseo"
       ],
       "countered_by": [
         {
@@ -3917,21 +4031,26 @@
           "strength_label": "3/10"
         }
       ],
-      "pick_rate_percent": 8,
+      "pick_rate_percent": 7,
       "role": "support",
-      "win_rate_percent": 52
+      "win_rate_percent": 49
     },
     "Zarya": {
       "best_maps": [
         "Antarctic Peninsula",
-        "Samoa",
-        "Shambali Monastery"
+        "Busan",
+        "Samoa"
       ],
       "countered_by": [
         {
           "hero": "Winston",
           "strength": 9,
           "strength_label": "9/10"
+        },
+        {
+          "hero": "D.Mon",
+          "strength": 8,
+          "strength_label": "8/10"
         },
         {
           "hero": "Reinhardt",
@@ -4008,13 +4127,13 @@
       ],
       "pick_rate_percent": 3,
       "role": "tank",
-      "win_rate_percent": 53
+      "win_rate_percent": 49
     },
     "Zenyatta": {
       "best_maps": [
         "Havana",
-        "Runasapi",
-        "Busan"
+        "Rialto",
+        "Junkertown"
       ],
       "countered_by": [
         {

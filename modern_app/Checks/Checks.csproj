@@ -10,5 +10,7 @@
     <Compile Include="..\Core\GameSession.cs" Link="GameSession.cs" />
     <Compile Include="..\Core\ScoreboardParser.cs" Link="ScoreboardParser.cs" />
     <Compile Include="..\Core\CounterpickEngine.cs" Link="CounterpickEngine.cs" />
+    <Content Include="..\Resources\Images\hero_*.png" Link="portraits\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\..\data\counterpickgg\*.json" Link="counterpickgg\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

@@ -26,8 +26,10 @@ public sealed record Hero(string Name, Role Role, bool Stadium)
 
 public static class HeroCatalog
 {
+    // Live roster verified 2026-09-19: https://overwatch.blizzard.com/en-us/heroes/
     public static readonly IReadOnlyList<Hero> All =
     [
+        new("D.Mon", Role.Tank, false),
         new("D.Va", Role.Tank, true), new("Domina", Role.Tank, false),
         new("Doomfist", Role.Tank, true), new("Hazard", Role.Tank, true),
         new("Junker Queen", Role.Tank, true), new("Mauga", Role.Tank, false),
