@@ -172,7 +172,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe main.py --check
 ```
 
-On Linux/macOS, use `.venv/bin/python` instead. Rules are configured in `ruff.toml`.
+On Linux/macOS, use `.venv/bin/python` instead. Rules are configured in `ruff.toml`. GitHub Actions runs Ruff and the Python self-check on pushes and pull requests; the workflow can also be started manually from the Actions tab.
 
 ### Repository layout
 
@@ -374,7 +374,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe main.py --check
 ```
 
-На Linux/macOS используйте `.venv/bin/python`. Правила заданы в `ruff.toml`.
+На Linux/macOS используйте `.venv/bin/python`. Правила заданы в `ruff.toml`. GitHub Actions запускает Ruff и встроенную Python-проверку при push и pull request; workflow также можно запустить вручную на вкладке Actions.
 
 ## Структура
 
