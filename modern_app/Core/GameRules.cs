@@ -26,7 +26,7 @@ public sealed record Hero(string Name, Role Role, bool Stadium)
 
 public static class HeroCatalog
 {
-    // Live roster verified 2026-09-19: https://overwatch.blizzard.com/en-us/heroes/
+    // Live roster verified 2026-10-28: https://overwatch.blizzard.com/en-us/heroes/
     public static readonly IReadOnlyList<Hero> All =
     [
         new("D.Mon", Role.Tank, false),
@@ -46,17 +46,19 @@ public static class HeroCatalog
         new("Mei", Role.Damage, true), new("Pharah", Role.Damage, true),
         new("Reaper", Role.Damage, true), new("Shion", Role.Damage, false),
         new("Sierra", Role.Damage, false), new("Sojourn", Role.Damage, true),
-        new("Soldier: 76", Role.Damage, true), new("Sombra", Role.Damage, false),
+        new("Soldier: 76", Role.Damage, true),
         new("Symmetra", Role.Damage, false), new("Torbjörn", Role.Damage, true),
         new("Tracer", Role.Damage, true), new("Vendetta", Role.Damage, true),
         new("Venture", Role.Damage, false), new("Widowmaker", Role.Damage, false),
 
         new("Ana", Role.Support, true), new("Baptiste", Role.Support, false),
-        new("Brigitte", Role.Support, true), new("Illari", Role.Support, false),
+        new("Brigitte", Role.Support, true), new("Doctrine", Role.Support, false),
+        new("Illari", Role.Support, false),
         new("Jetpack Cat", Role.Support, true), new("Juno", Role.Support, true),
         new("Kiriko", Role.Support, true), new("Lifeweaver", Role.Support, false),
         new("Lúcio", Role.Support, true), new("Mercy", Role.Support, true),
         new("Mizuki", Role.Support, false), new("Moira", Role.Support, true),
+        new("Sombra", Role.Support, false),
         new("Wuyang", Role.Support, true), new("Zenyatta", Role.Support, true),
     ];
 

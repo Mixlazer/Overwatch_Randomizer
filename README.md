@@ -39,7 +39,7 @@ Navigation is divided into four focused tabs: **Random**, **Game**, **Counters**
 
 #### Random
 
-- 53 heroes, including D.Mon, verified against Blizzard's [live roster](https://overwatch.blizzard.com/en-us/heroes/) on September 19, 2026; 33 are available in Stadium;
+- 54 heroes, including Doctrine, verified against Blizzard's [live roster](https://overwatch.blizzard.com/en-us/heroes/) on October 28, 2026; Sombra is now a Support, and 33 heroes are available in Stadium;
 - `5v5`, Open Queue `6v6`, Stadium, and custom modes for 1–10 participants;
 - a dedicated Stadium hero pool;
 - the correct `1 Tank / 2 Damage / 2 Support` role composition in 5v5;
@@ -84,7 +84,7 @@ Round score formula:
 - `5v5`, `Open 6v6`, and `Stadium` modes;
 - Bronze, Silver, Gold, Platinum, Diamond, Master, and Grandmaster datasets;
 - deterministic scoring based on `data/counterpickgg`;
-- all seven rank datasets refreshed from [CounterPickGG](https://counterpickgg.com/?platform=pc&gamemode=competitive&rank=gold) on September 19, 2026, including D.Mon;
+- all seven rank datasets refreshed from [CounterPickGG](https://counterpickgg.com/?platform=pc&gamemode=competitive&rank=gold) on October 28, 2026 (source statistics dated October 25), including Doctrine and the Sombra/Roadhog reworks;
 - role counts appropriate to the selected mode;
 - five strongest recommended teams;
 - no hero is repeated across the five displayed teams.
@@ -227,7 +227,7 @@ Overwatch and related names are trademarks of Blizzard Entertainment.
 
 ### Рандом
 
-- 53 героя, включая D.Mon: список сверен с [каталогом Blizzard](https://overwatch.blizzard.com/en-us/heroes/) на 19 сентября 2026 года; в Stadium доступны 33 героя;
+- 54 героя, включая Doctrine: список сверен с [каталогом Blizzard](https://overwatch.blizzard.com/en-us/heroes/) на 28 октября 2026 года; Sombra теперь относится к поддержке, в Stadium доступны 33 героя;
 - режимы `5v5`, открытая очередь `6v6`, Stadium и своя игра на 1–10 участников;
 - отдельный пул героев Stadium;
 - корректный состав ролей `1 танк / 2 урона / 2 поддержки` для 5v5;
@@ -272,7 +272,7 @@ Overwatch and related names are trademarks of Blizzard Entertainment.
 - режимы `5v5`, `Open 6v6` и `Stadium`;
 - данные для рангов Bronze, Silver, Gold, Platinum, Diamond, Master и Grandmaster;
 - очки контрпиков рассчитываются детерминированно по данным `data/counterpickgg`;
-- данные всех семи рангов обновлены из [CounterPickGG](https://counterpickgg.com/?platform=pc&gamemode=competitive&rank=gold) 19 сентября 2026 года и включают D.Mon;
+- данные всех семи рангов обновлены из [CounterPickGG](https://counterpickgg.com/?platform=pc&gamemode=competitive&rank=gold) 28 октября 2026 года (статистика источника от 25 октября), включая Doctrine и переработанных Sombra/Roadhog;
 - соблюдается требуемое количество героев каждой роли;
 - показываются пять сильнейших составов;
 - один герой не повторяется между предложенными составами топ-5.

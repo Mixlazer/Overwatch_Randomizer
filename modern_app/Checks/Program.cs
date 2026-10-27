@@ -6,12 +6,14 @@ static void Check(bool condition, string message)
     if (!condition) throw new InvalidOperationException(message);
 }
 
-Check(HeroCatalog.All.Count == 53 && HeroCatalog.All.Select(hero => hero.Name).Distinct().Count() == 53, "hero count and uniqueness");
+Check(HeroCatalog.All.Count == 54 && HeroCatalog.All.Select(hero => hero.Name).Distinct().Count() == 54, "hero count and uniqueness");
 Check(HeroCatalog.All.Count(hero => hero.Stadium) == 33, "stadium count");
 var dmon = HeroCatalog.All.Single(hero => hero.Name == "D.Mon");
 Check(dmon.Role == Role.Tank && !dmon.Stadium && dmon.ImageName == "hero_dmon.png", "D.Mon role, pool and portrait");
-Check(HeroCatalog.All.Single(hero => hero.Name == "Sombra").Role == Role.Damage &&
-      HeroCatalog.All.All(hero => hero.Name != "Doctrine"), "unreleased Season 5 changes stay out of the live roster");
+var doctrine = HeroCatalog.All.Single(hero => hero.Name == "Doctrine");
+var sombra = HeroCatalog.All.Single(hero => hero.Name == "Sombra");
+Check(doctrine.Role == Role.Support && !doctrine.Stadium && doctrine.ImageName == "hero_doctrine.png", "Doctrine role, pool and portrait");
+Check(sombra.Role == Role.Support && !sombra.Stadium, "Sombra is a support in Season 5");
 Check(HeroCatalog.All.All(hero => File.Exists(Path.Combine(AppContext.BaseDirectory, "portraits", hero.ImageName))), "all hero portraits are packaged");
 foreach (var rank in new[] { "bronze", "silver", "gold", "platinum", "diamond", "master", "grandmaster" })
 {
@@ -29,9 +31,14 @@ foreach (var rank in new[] { "bronze", "silver", "gold", "platinum", "diamond", 
                 heroes.TryGetProperty(counter.GetProperty("hero").GetString()!, out _) &&
                 counter.GetProperty("strength").GetInt32() is >= 1 and <= 10), $"{rank}: {hero.Name} {key}");
     }
-    var dmonTeams = CounterpickEngine.Calculate(json, [dmon.Name], CounterpickMode.FiveVsFive);
-    Check(dmonTeams.Count == 5 && dmonTeams[0].Score > 0, $"{rank}: D.Mon has counterpick data");
+    foreach (var enemy in new[] { dmon, doctrine, sombra })
+    {
+        var enemyTeams = CounterpickEngine.Calculate(json, [enemy.Name], CounterpickMode.FiveVsFive);
+        Check(enemyTeams.Count == 5 && enemyTeams[0].Score > 0, $"{rank}: {enemy.Name} has counterpick data");
+    }
 }
+var supports = GameRules.HeroesFor(Enumerable.Repeat(Role.Support, HeroCatalog.For(Role.Support, HeroPool.Standard).Count).ToArray(), HeroPool.Standard, new Random(7));
+Check(supports.Contains(doctrine) && supports.Contains(sombra) && supports.All(hero => hero.Role == Role.Support), "Doctrine and Sombra available in support randomization");
 var session = new GameSession(new Random(7));
 session.Start(5, HeroPool.Standard);
 Check(session.Players.All(player => player.Choices.Count == 5 && player.Choices.Distinct().Count() == 5), "unique choices");
@@ -63,5 +70,8 @@ Check(teams[0].Picks.Count(pick => pick.Hero.Role == Role.Tank) == 1 &&
 Check(teams.SelectMany(team => team.Picks).Select(pick => pick.Hero.Name).Distinct().Count() ==
       teams.SelectMany(team => team.Picks).Count(), "top 5 heroes do not repeat");
 Check(CounterpickEngine.Calculate(counters, ["Ana"], CounterpickMode.Open)[0].Picks.Count == 6, "counterpick open 6v6");
-Check(CounterpickEngine.MatchHeroes("D.Va, D.Mon; dmon; Genji; unknown").SequenceEqual(["D.Va", "D.Mon", "Genji"]), "manual enemy parsing");
+const string supportCounters = """{"heroes":{"Ana":{"countered_by":[{"hero":"Sombra","strength":10},{"hero":"Doctrine","strength":9}]}}}""";
+var supportTeam = CounterpickEngine.Calculate(supportCounters, ["Ana"], CounterpickMode.FiveVsFive)[0];
+Check(supportTeam.Picks.Where(pick => pick.Hero.Role == Role.Support).Select(pick => pick.Hero).ToHashSet().SetEquals([sombra, doctrine]) && supportTeam.Score == 19, "Sombra and Doctrine occupy support slots in counterpick teams");
+Check(CounterpickEngine.MatchHeroes("D.Va, D.Mon; dmon; doctrine; Sombra; Genji; unknown").SequenceEqual(["D.Va", "D.Mon", "Doctrine", "Sombra", "Genji"]), "manual enemy parsing");
 Console.WriteLine("OK: heroes, game rules, scoring, transfer, VLM parser contract, deterministic counterpicks");

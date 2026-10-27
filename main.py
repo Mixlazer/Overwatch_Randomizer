@@ -14,7 +14,7 @@ from ocr_helper import extract_stats_from_rows, parse_scoreboard_screenshot as p
 # English roles
 roles = ['Tank', 'Damage', 'Support']
 
-# Live roster verified 2026-09-19: https://overwatch.blizzard.com/en-us/heroes/
+# Live roster verified 2026-10-28: https://overwatch.blizzard.com/en-us/heroes/
 characters_by_role_full = {
     'Tank': [
         'D.Mon', 'D.Va', 'Domina', 'Doomfist', 'Hazard', 'Junker Queen', 'Mauga', 'Orisa',
@@ -23,12 +23,12 @@ characters_by_role_full = {
     'Damage': [
         'Anran', 'Ashe', 'Bastion', 'Cassidy', 'Echo', 'Emre', 'Freja', 'Genji',
         'Hanzo', 'Junkrat', 'Mei', 'Pharah', 'Reaper', 'Shion', 'Sierra',
-        'Sojourn', 'Soldier: 76', 'Sombra', 'Symmetra', 'Torbjörn', 'Tracer',
+        'Sojourn', 'Soldier: 76', 'Symmetra', 'Torbjörn', 'Tracer',
         'Vendetta', 'Venture', 'Widowmaker'
     ],
     'Support': [
-        'Ana', 'Baptiste', 'Brigitte', 'Illari', 'Jetpack Cat', 'Juno', 'Kiriko',
-        'Lifeweaver', 'Lúcio', 'Mercy', 'Mizuki', 'Moira', 'Wuyang', 'Zenyatta'
+        'Ana', 'Baptiste', 'Brigitte', 'Doctrine', 'Illari', 'Jetpack Cat', 'Juno', 'Kiriko',
+        'Lifeweaver', 'Lúcio', 'Mercy', 'Mizuki', 'Moira', 'Sombra', 'Wuyang', 'Zenyatta'
     ]
 }
 
@@ -171,9 +171,11 @@ def parse_scoreboard_screenshot(path, player_names):
 
 def self_check():
     all_characters = {ch for roster in characters_by_role_full.values() for ch in roster}
-    assert len(all_characters) == sum(map(len, characters_by_role_full.values())) == 53
+    assert len(all_characters) == sum(map(len, characters_by_role_full.values())) == 54
     assert len(set(stadium_characters)) == len(stadium_characters) == 33
     assert hero_role('D.Mon') == 'Tank' and 'D.Mon' not in stadium_characters
+    assert hero_role('Doctrine') == hero_role('Sombra') == 'Support'
+    assert not {'Doctrine', 'Sombra'} & set(stadium_characters)
     assert set(stadium_characters) <= all_characters
     assert all(icon_path(ch) for ch in all_characters)
     assert all(png_size(icon_path(ch)) == (50, 50) for ch in all_characters)
