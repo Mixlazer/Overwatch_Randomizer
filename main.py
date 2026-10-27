@@ -1,15 +1,19 @@
-import tkinter as tk
-from tkinter import filedialog, messagebox, ttk
 import json
-import random
+import logging
 import os
+import random
 import struct
 import subprocess
 import sys
 import tempfile
 import threading
+import tkinter as tk
+from tkinter import filedialog, messagebox, ttk
 
-from ocr_helper import extract_stats_from_rows, parse_scoreboard_screenshot as parse_scoreboard_in_process
+from ocr_helper import extract_stats_from_rows
+from ocr_helper import parse_scoreboard_screenshot as parse_scoreboard_in_process
+
+logger = logging.getLogger(__name__)
 
 # English roles
 roles = ['Tank', 'Damage', 'Support']
@@ -204,8 +208,8 @@ def lower_process_priority():
             ctypes.windll.kernel32.GetCurrentProcess(),
             0x00004000,  # BELOW_NORMAL_PRIORITY_CLASS
         )
-    except Exception:
-        pass
+    except (AttributeError, OSError) as error:
+        logger.warning('Could not lower process priority: %s', error)
 
 class OverwatchRandomizerApp:
     def __init__(self, root):
@@ -418,7 +422,7 @@ class OverwatchRandomizerApp:
                     self.avatar_labels[i].configure(image=photo)
                     self.avatar_labels[i].image = photo
                     self.avatar_images[i] = photo
-                except Exception as error:
+                except tk.TclError as error:
                     print(f"Error loading image for {character}: {error}")
                     self.avatar_labels[i].configure(image='', text='')
                     self.avatar_images[i] = None
@@ -561,7 +565,7 @@ class OverwatchRandomizerApp:
             text=f'Emergency all ({self.emergency_available}/1)',
             state='normal' if self.emergency_available else 'disabled',
         )
-        for index, (player, widgets) in enumerate(zip(self.game_players, self.game_rows)):
+        for index, (player, widgets) in enumerate(zip(self.game_players, self.game_rows, strict=True)):
             widgets['points'].config(text=f"Points: {player['points']}")
             widgets['role'].config(text=hero_role(player['selected']))
             widgets['choice']['values'] = player['heroes']
@@ -589,7 +593,7 @@ class OverwatchRandomizerApp:
         if not name:
             self.game_players[index]['name'].set(f'Player {index + 1}')
         choices = self.player_choices()
-        for player_index, (player, row) in enumerate(zip(self.game_players, self.game_rows)):
+        for player_index, (player, row) in enumerate(zip(self.game_players, self.game_rows, strict=True)):
             target_index = self.choice_index(player['target'].get())
             if target_index is None or target_index == player_index:
                 target_index = (player_index + 1) % len(choices)
@@ -629,7 +633,7 @@ class OverwatchRandomizerApp:
             new = random.sample(game_hero_pool(role, self.active_game_pool), len(slots))
             if new != old:
                 break
-        for slot, hero in zip(slots, new):
+        for slot, hero in zip(slots, new, strict=True):
             player['heroes'][slot] = hero
         player['selected'] = new[0]
         self.refresh_game_ui()
@@ -691,7 +695,7 @@ class OverwatchRandomizerApp:
                 return
             gains.append(calculate_round_points(**stats))
 
-        for player, gain in zip(self.game_players, gains):
+        for player, gain in zip(self.game_players, gains, strict=True):
             player['points'] += gain
             for value in player['stats'].values():
                 value.set('0')
@@ -700,7 +704,7 @@ class OverwatchRandomizerApp:
         self.game_status_var.set('Round complete; emergency rerolls restored')
         messagebox.showinfo(
             'Round complete',
-            '\n'.join(f"{player['name'].get()}: {gain:+d}" for player, gain in zip(self.game_players, gains)),
+            '\n'.join(f"{player['name'].get()}: {gain:+d}" for player, gain in zip(self.game_players, gains, strict=True)),
         )
 
     def load_scoreboard(self):
@@ -722,6 +726,7 @@ class OverwatchRandomizerApp:
         try:
             results, _text = parse_scoreboard_screenshot(path, names)
         except Exception as error:
+            logger.exception('Scoreboard recognition failed')
             self.root.after(0, self._ocr_failed, str(error))
             return
         self.root.after(0, self._ocr_done, results)

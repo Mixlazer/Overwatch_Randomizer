@@ -160,6 +160,20 @@ Run the rules check without building the interface:
 
 The check covers role composition, hero uniqueness, the Stadium pool, purchases, point transfers, round scoring, personal rerolls, the VLM parser contract, and deterministic counterpick recommendations.
 
+### Python linting
+
+The preserved Python version and OCR helper use Ruff (Python 3.10+):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m ruff check .
+.\.venv\Scripts\python.exe -m ruff check . --fix
+.\.venv\Scripts\python.exe main.py --check
+```
+
+On Linux/macOS, use `.venv/bin/python` instead. Rules are configured in `ruff.toml`.
+
 ### Repository layout
 
 ```text
@@ -347,6 +361,20 @@ Overwatch and related names are trademarks of Blizzard Entertainment.
 ```
 
 Сценарий проверяет составы ролей, уникальность героев, Stadium-пул, покупки, переводы очков, формулу раунда, персональные рероллы, контракт VLM-парсера и детерминированный топ-5 контрпиков.
+
+## Проверка Python-кода
+
+Для сохранённой Python-версии и OCR-помощника используется Ruff (Python 3.10+):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+.\.venv\Scripts\python.exe -m ruff check .
+.\.venv\Scripts\python.exe -m ruff check . --fix
+.\.venv\Scripts\python.exe main.py --check
+```
+
+На Linux/macOS используйте `.venv/bin/python`. Правила заданы в `ruff.toml`.
 
 ## Структура
 

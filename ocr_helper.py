@@ -1,9 +1,12 @@
-from difflib import SequenceMatcher
 import json
+import logging
 import os
 import re
 import sys
 import tempfile
+from difflib import SequenceMatcher
+
+logger = logging.getLogger(__name__)
 
 STAT_KEYS = ('elims', 'objective', 'damage', 'healing', 'deaths')
 STAT_NUMBER_RE = re.compile(
@@ -56,7 +59,7 @@ def extract_stats_from_rows(rows, player_names):
             if score < 0.62 or row_index in used_rows:
                 continue
             values = [_number(value, objective=(i == 1)) for i, value in enumerate(numbers)]
-            found[player_index] = dict(zip(STAT_KEYS, values))
+            found[player_index] = dict(zip(STAT_KEYS, values, strict=True))
             used_rows.add(row_index)
             break
     return found
@@ -85,8 +88,8 @@ def _rows_from_pages(pages):
 
 
 def parse_scoreboard_screenshot(path, player_names):
-    from PIL import Image
     from liteparse import LiteParse
+    from PIL import Image
 
     with tempfile.TemporaryDirectory() as temp_dir:
         pdf_path = os.path.join(temp_dir, 'scoreboard.pdf')
@@ -114,6 +117,7 @@ def run_cli():
         payload = {'results': results, 'text': text}
         exit_code = 0
     except Exception as error:
+        logger.exception('Scoreboard recognition failed')
         payload = {'error': str(error)}
         exit_code = 1
     with open(output_path, 'w', encoding='utf-8') as output:
